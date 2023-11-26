@@ -1,0 +1,63 @@
+\title{{\Huge{\textbf{延世大学韩国语教程1}}}\\——汉谚混写精要版}
+\author{Alfred}
+\date{\today}
+\rubysetup{|g|}
+\linespread{1.5}
+\setCJKmainfont[BoldFont={TH-Hak.TTF}, ItalicFont={TH-Khaai-PP0.TTF}, FallBack=TH-Tshyn-P2.TTF]{TH-Tshyn-P0.TTF}
+\setromanfont[Mapping=tex-text]{TH-Times.TTF}
+\setsansfont[Mapping=tex-text, Scale=MatchLowercase]{TH-Times.TTF}
+\setmonofont[Scale=MatchLowercase]{TH-Times.TTF}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newcounter{grammarnumber}[chapter]
+\newcounter{grammarsection}[grammarnumber]
+\renewcommand{\thegrammarsection}{\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection}}
+\newenvironment{grammar}{\stepcounter{grammarnumber}}{}
+\newenvironment{grammarsect}[1][]{\refstepcounter{grammarsection}\par\noindent{\large\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection} #1}}{\par}
+\makesavenoteenv{tabular}
+\newcounter{dicnumber}[chapter]
+\newcounter{dicsection}[dicnumber]
+%\renewcommand{\thedicsection}{\arabic{chapter}.\arabic{dicnumber} G\arabic{dicsection}}
+\newenvironment{dic}{\stepcounter{dicnumber}}{}
+\newenvironment{dicsect}{\stepcounter{dicsection}\par\noindent{\large\arabic{chapter}.\arabic{dicnumber} D\arabic{dicsection}\\}}{\par}
+%\makesavenoteenv{tabular}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=cyan,
+}
+\setCJKfamilyfont{hanr}{TH-Joeng.TTC}
+%\setCJKfamilyfont{hentai}{Zen Kurenaido}
+\newcommand{\kr}{\CJKfamily{hanr}}
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{center}
+    \Huge\textbf{前言}
+\end{center}~\
+本书是延世大学《韩国语教程1》的汉谚混写版，版权归属与原书同。由于本人精力有限，仅给出课文单词等必要内容，其余不重要内容略。目标人群是已经掌握谚文识读的人。故直接从第一课开始，原书前文对语音文字的叙述不计入本书。人名部分在未明确给定的情况下不指定汉字。
+~\
+\begin{flushright}
+    \begin{tabular}{c}
+        \aruby{Alfred}{알프레드}\\
+        \today
+    \end{tabular}
+\end{flushright}
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
