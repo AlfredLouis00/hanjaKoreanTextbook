@@ -7,12 +7,6 @@
 \setromanfont[Mapping=tex-text]{TH-Times.TTF}
 \setsansfont[Mapping=tex-text, Scale=MatchLowercase]{TH-Times.TTF}
 \setmonofont[Scale=MatchLowercase]{TH-Times.TTF}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{corollary}{Corollary}[section]
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{definition}{Definition}[section]
-\newtheorem{example}{Example}[section]
 \newcounter{grammarnumber}[chapter]
 \newcounter{grammarsection}[grammarnumber]
 \renewcommand{\thegrammarsection}{\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection}}
@@ -24,7 +18,6 @@
 %\renewcommand{\thedicsection}{\arabic{chapter}.\arabic{dicnumber} G\arabic{dicsection}}
 \newenvironment{dic}{\stepcounter{dicnumber}}{}
 \newenvironment{dicsect}{\stepcounter{dicsection}\par\noindent{\large\arabic{chapter}.\arabic{dicnumber} D\arabic{dicsection}\\}}{\par}
-%\makesavenoteenv{tabular}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -33,7 +26,6 @@
     citecolor=cyan,
 }
 \setCJKfamilyfont{hanr}{TH-Joeng.TTC}
-%\setCJKfamilyfont{hentai}{Zen Kurenaido}
 \newcommand{\kr}{\CJKfamily{hanr}}
 \begin{document}
 
