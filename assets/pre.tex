@@ -11,13 +11,16 @@
 \newcounter{grammarsection}[grammarnumber]
 \renewcommand{\thegrammarsection}{\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection}}
 \newenvironment{grammar}{\stepcounter{grammarnumber}}{}
-\newenvironment{grammarsect}[1][]{\refstepcounter{grammarsection}\par\noindent{\large\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection} #1}\addcontentsline{toc}{subsection}{\thegrammarsection {\quad} #1}}{\par}
+\newenvironment{grammarsect}[1][]{\refstepcounter{grammarsection}\par\noindent{\large\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection} #1}\addcontentsline{toc}{subsection}{\thegrammarsection {}  #1}}{\par}
 \makesavenoteenv{tabular}
 \newcounter{dicnumber}[chapter]
 \newcounter{dicsection}[dicnumber]
 %\renewcommand{\thedicsection}{\arabic{chapter}.\arabic{dicnumber} G\arabic{dicsection}}
 \newenvironment{dic}{\stepcounter{dicnumber}}{}
 \newenvironment{dicsect}{\stepcounter{dicsection}\par\noindent{\large\arabic{chapter}.\arabic{dicnumber} D\arabic{dicsection}\\}}{\par}
+
+%\usepackage{titlesec} This will make the Chapter to be like "第 1 課"
+%\titleformat{\chapter}{\kr\huge\bfseries}{\ruby{第}{제}\ \thechapter\ \ruby{課}{과}\\}{1em}{}
 
 \hypersetup{
     colorlinks=true,
