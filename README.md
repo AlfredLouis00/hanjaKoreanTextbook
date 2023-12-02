@@ -1,7 +1,7 @@
 # *Korean Courses* Textbook with Hanja
 [简体中文版](readme-SC.md) [繁體中文版](readme-TC.md)
 
-This is a Korean textbook based on the contents of the *Korean Courses*《韩国语教程》Simplified Chinese edtion by Yonsei University. The copyrights reserved in accordance with the original book.
+This is a Korean textbook with hanja based on the contents of the *Korean Courses*《韩国语教程》Simplified Chinese edtion by Yonsei University. The copyrights reserved in accordance with the original book.Please contact me by issuing if there is an infregement.
 
 Files in the repository are LaTeX files, which you can save locally in the command line with 
 ```
