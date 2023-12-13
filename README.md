@@ -10,3 +10,5 @@ git clone https://github.com/AlfredLouis00/hanjaKoreanTextbook.git
 You can find all the fonts used in the tex files [here](http://cheonhyeong.com/English/download.html) in case you meet some errors saying a font is missing. Please follow the instructions there to install the fonts and enjoy your compiling.
 
 Just turn to `release` section and download the `KoreanWithHanja.pdf` if you only want to get the PDF file.
+
+You are welcome to join in the QQ group 724519488 for discussion or advising.
