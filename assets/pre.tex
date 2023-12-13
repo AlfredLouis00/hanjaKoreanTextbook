@@ -1,3 +1,16 @@
+\usepackage[space]{xeCJK}
+\usepackage{BOONDOX-cal, amsmath, amssymb, bm, graphicx, hyperref, mathrsfs, fontspec}
+\usepackage{pxrubrica}
+\usepackage{xcolor}
+\usepackage{footnote}
+\usepackage{diagbox}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\cover{figure/cover.jpg}
+%\pagestyle{fancy}
+%\fancyhead[C]{\thechaptername}
+%\fancyfoot[C]{\thepage}
 \title{{\Huge{\textbf{延世大学韩国语教程1}}}\\——汉谚混写精要版}
 \author{Alfred}
 \date{\today}
@@ -18,7 +31,8 @@
 %\renewcommand{\thedicsection}{\arabic{chapter}.\arabic{dicnumber} G\arabic{dicsection}}
 \newenvironment{dic}{\stepcounter{dicnumber}}{}
 \newenvironment{dicsect}{\stepcounter{dicsection}\par\noindent{\large\arabic{chapter}.\arabic{dicnumber} D\arabic{dicsection}\\}}{\par}
-
+\newcounter{conversation}[dicsection]
+\newcommand{\con}{\stepcounter{conversation}\theconversation )}
 %\usepackage{titlesec} This will make the Chapter to be like "第 1 課"
 %\titleformat{\chapter}{\kr\huge\bfseries}{\ruby{第}{제}\ \thechapter\ \ruby{課}{과}\\}{1em}{}
 
@@ -41,7 +55,7 @@
 \begin{center}
     \Huge\textbf{前言}
 \end{center}~\
-本书是延世大学《韩国语教程1》的汉谚混写版，版权归属与原书同。由于本人精力有限，仅给出课文单词等必要内容，其余不重要内容略。目标人群是已经掌握谚文识读的人。故直接从第一课开始，原书前文对语音文字的叙述不计入本书。\\
+\indent 本书是延世大学《韩国语教程1》的汉谚混写版，版权归属与原书同。由于本人精力有限，仅给出课文单词等必要内容，其余不重要内容略。目标人群是已经掌握谚文识读的人。故直接从第一课开始，原书前文对语音文字的叙述不计入本书。\\
 \indent 人名部分在未明确给定的情况下不指定汉字。一些由于历史演变不再规则的汉字词将通过脚注的方式在第一次出现时标注。\\
 \indent 另外本书独创性地使用语基体系对韩语语法进行解读和描述。
 ~\
