@@ -6,7 +6,7 @@
 
 仓库本身是LaTeX代码文件，可以在命令行中使用如下命令将代码保存到本地。
 
-```
+```cmd
 git clone https://github.com/AlfredLouis00/hanjaKoreanTextbook.git
 ```
 
@@ -14,4 +14,4 @@ git clone https://github.com/AlfredLouis00/hanjaKoreanTextbook.git
 
 如仅需要所生成的PDF文件，请点击`releases`中标有`latest`绿色标签的版本，随后点击下载`KoreanWithHanja.pdf`文件。
 
-欢迎加入QQ群724519488讨论或提出宝贵意见和建议
+欢迎加入QQ群724519488讨论或提出宝贵意见和建议。
