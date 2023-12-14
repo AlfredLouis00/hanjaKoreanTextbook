@@ -9,6 +9,6 @@ git clone https://github.com/AlfredLouis00/hanjaKoreanTextbook.git
 ```
 如系統提示缺失字體，請前往[天珩字庫](http://cheonhyeong.com/Traditional/download.html)找到相關字體下載安裝並使用。
 
-如僅需要所生成的PDF文件，請下載`release`中的`KoreanWithHanja.pdf`文件。
+如僅需要所生成的PDF文件，請點擊`release`板塊中帶有`latest`的綠色標籤，隨後點擊下載`KoreanWithHanja.pdf`文件。
 
 歡迎加入QQ群724519488討論或提出寶貴意見和建議。
