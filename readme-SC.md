@@ -1,6 +1,6 @@
 # 汉谚版延世大学《韩国语教程》
 
-[English Editon](README.md) [繁體中文版](README-TC.md)
+[English Editon](README.md) [繁體中文版](readme-TC.md)
 
 本书是汉谚混写的韩语教程，基于延世大学《韩国语教程》内容，版权同原书。如有侵权行为请联系本人删除。
 
