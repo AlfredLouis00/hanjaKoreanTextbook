@@ -1,6 +1,6 @@
 # 漢諺版延世大學《韓國語教程》
 
-[English Editon](README.md) [简体中文版](README-SC.md)
+[English Editon](README.md) [简体中文版](readme-SC.md)
 
 本書是漢諺混寫的韓語教程，基於延世大學《韓國語教程》內容，版權同原書。如有侵權行為請聯繫本人刪除。
 
