@@ -15,14 +15,18 @@
 %\fancyfoot[C]{\thepage}
 \setcounter{tocdepth}{3}
 \title{{\Huge{\textbf{延世大学韩国语教程1}}}\\——汉谚混写精要版}
-\author{Alfred}
+\author{\aruby{Alfred}{\kr 알프레드}}
 \date{\today}
 \rubysetup{|g|}
 \linespread{1.5}
-\setCJKmainfont[BoldFont={TH-Hak.TTF}, ItalicFont={TH-Khaai-PP0.TTF}, FallBack=TH-Tshyn-P2.TTF]{TH-Tshyn-P0.TTF}
-\setromanfont[Mapping=tex-text]{TH-Times.TTF}
-\setsansfont[Mapping=tex-text, Scale=MatchLowercase]{TH-Times.TTF}
-\setmonofont[Scale=MatchLowercase]{TH-Times.TTF}
+% \setCJKmainfont[BoldFont={TH-Hak.TTF}, ItalicFont={TH-Khaai-PP0.TTF}, FallBack={TH-Tshyn-P2.TTF}]{TH-Tshyn-P0.TTF}
+% \setromanfont[Mapping=tex-text]{TH-Times.TTF}
+% \setsansfont[Mapping=tex-text, Scale=MatchLowercase]{TH-Times.TTF}
+% \setmonofont[Scale=MatchLowercase]{TH-Times.TTF}
+\setCJKmainfont[BoldFont={simhei.ttf}, ItalicFont={simkai.ttf}, FallBack={simsunb.ttf}]{simsun.ttc}
+\setromanfont{Times New Roman}
+\setCJKfamilyfont{hanr}{batang.ttc}%TH-Joeng.TTC}
+\newcommand{\kr}{\CJKfamily{hanr}}
 \newcounter{grammarnumber}[chapter]
 \newcounter{grammarsection}[grammarnumber]
 \renewcommand{\thegrammarsection}{\arabic{chapter}.\arabic{grammarnumber} G\arabic{grammarsection}}
@@ -46,8 +50,6 @@
     urlcolor=blue,
     citecolor=cyan,
 }
-\setCJKfamilyfont{hanr}{TH-Joeng.TTC}
-\newcommand{\kr}{\CJKfamily{hanr}}
 \begin{document}
 
 \maketitle
@@ -64,7 +66,7 @@
 ~\
 \begin{flushright}
     \begin{tabular}{c}
-        \aruby{Alfred}{알프레드}\\
+        \aruby{Alfred}{\kr 알프레드}\\
         \today
     \end{tabular}
 \end{flushright}
@@ -76,3 +78,4 @@
 \newpage
 \setcounter{page}{1}
 \pagenumbering{arabic}
+\newpage
