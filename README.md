@@ -10,7 +10,7 @@ Files in the repository are LaTeX files, which you can save locally in the comma
 git clone https://github.com/AlfredLouis00/hanjaKoreanTextbook.git
 ```
 
-You can find all the fonts used in the tex files [here](http://cheonhyeong.com/English/download.html) in case you meet some errors saying a font is missing. Please follow the instructions there to install the fonts and enjoy your compiling.
+<!-- You can find all the fonts used in the tex files [here](http://cheonhyeong.com/English/download.html) in case you meet some errors saying a font is missing. Please follow the instructions there to install the fonts and enjoy your compiling. -->
 
 Just turn to `release` section, open the `latest` release and then download the `KoreanWithHanja.pdf` if you only want to get the PDF file.
 

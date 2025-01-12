@@ -1,0 +1,60 @@
+name: Build and Release LaTeX document
+
+on:
+  push:
+    branches: [ yonsei1 ]
+    tags:
+    - 'v*'
+  pull_request:
+    branches: [ yonsei1 ]
+  workflow_dispatch:
+
+jobs:
+  build_release_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: yonsei1.tex
+          
+      - name: Stash PDF
+        run: |
+          mv yonsei1.pdf $HOME # cache the file
+          
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: gh_actions_builds
+          
+      - name: Checkout gh_actions_builds Branch
+        uses: actions/checkout@v1
+        with:
+          ref: gh_actions_builds 
+          
+      - name: Commit PDF
+        run: |
+          git config --local user.email "1739415287@qq.com"
+          git config --local user.name "AlfredLouis00"
+          mv $HOME/yonsei1.pdf $(pwd) # bring it back 
+          git add -f yonsei1.pdf
+          git commit -m "Release PDF by GitHub Action Automatically"
+          
+      - name: Push PDF
+        uses: ad-m/github-push-action@v0.5.0
+        with: 
+          branch: gh_actions_builds 
+          force: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+  
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: yonsei1.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
